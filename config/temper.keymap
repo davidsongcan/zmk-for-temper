@@ -164,12 +164,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer {
-            display-name = "QWERTY";
+        Colemak-DH {
+            display-name = "Colemak-DH";
             bindings = <
-  &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y       &kp U              &kp I          &kp O            &kp P
-  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G        &kp H       &hm RIGHT_SHIFT J  &hm RCTRL K    &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
-  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N       &kp M              &kp COMMA      &kp DOT          &kp FSLH
+  &kp Q           &kp W           &kp F        &kp P             &kp B        &kp J       &kp L              &kp U          &kp O            &kp P
+  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G        &kp M       &hm RIGHT_SHIFT N  &hm RCTRL E    &hm RIGHT_ALT I  &hm RIGHT_GUI O
+  &kp Z           &kp X           &kp C        &kp D             &kp V        &kp K       &kp H              &kp COMMA      &kp DOT          &kp FSLH
                                   &kp TAB      &lt 1 SPACE       &kp LCTRL    &kp RSHIFT  &ltq 2 BACKSPACE   &kp RIGHT_GUI
             >;
         };
@@ -201,6 +201,16 @@
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp F4  &kp F5  &kp F6  &kp F11
   &bt BT_CLR    &kp C_PREV    &kp C_PP      &kp C_NEXT    &trans          &trans  &kp F1  &kp F2  &kp F3  &kp F10
                               &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        QWERTY {
+            display-name = "QWERTY";
+            bindings = <
+  &kp Q           &kp W           &kp F        &kp P             &kp B        &kp J       &kp L              &kp U          &kp O            &kp P
+  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T  &kp G        &kp M       &hm RIGHT_SHIFT N  &hm RCTRL E    &hm RIGHT_ALT I  &hm RIGHT_GUI O
+  &kp Z           &kp X           &kp C        &kp D             &kp V        &kp K       &kp H              &kp COMMA      &kp DOT          &kp FSLH
+                                  &kp TAB      &lt 1 SPACE       &kp LCTRL    &kp RSHIFT  &ltq 2 BACKSPACE   &kp RIGHT_GUI
             >;
         };
     };
