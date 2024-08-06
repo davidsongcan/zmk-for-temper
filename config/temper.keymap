@@ -187,10 +187,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-  &kp ESC   &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp UP_ARROW  &kp TAB    &super_bspc
-  &kp CAPS  &none   &none   &trans  &trans    &none   &kp LEFT  &kp DOWN      &kp RIGHT  &gresc
-  &kp DEL   &trans  &trans  &trans  &trans    &trans  &none     &trans        &trans     &trans
-                    &trans  &trans  &trans    &trans  &trans    &trans
+  &kp ESC   &kp HOME  &kp UP    &kp TAB    &trans    &trans  &kp HOME  &kp UP_ARROW  &kp TAB    &super_bspc
+  &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &none   &kp LEFT  &kp DOWN      &kp RIGHT  &gresc
+  &kp DEL   &trans    &trans    &trans     &trans    &trans  &none     &trans        &trans     &trans
+                      &trans    &trans     &trans    &trans  &trans    &trans
             >;
         };
 
