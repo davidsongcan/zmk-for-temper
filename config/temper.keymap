@@ -197,20 +197,20 @@
             >;
         };
 
-        nav_num {
-            display-name = "NAV_NUM";
-            label = "NAV_NUM";
+        num {
+            display-name = "NUM";
+            label = "NUM";
             bindings = <
-  &kp N1            &kp N2        &kp N3        &kp N4          &kp N5          &kp N6              &kp N7        &kp N8            &kp N9         &kp N0
-  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp CAPSLOCK    &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT      &kp PAGE_UP
-  &trans            &trans        &trans        &trans          &trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp RG(RIGHT)  &kp PAGE_DOWN
-                                  &trans        &trans          &trans          &trans              &trans        &trans
+  &kp N1            &kp N2        &kp N3        &kp N4          &kp N5          &kp N6  &kp N7        &kp N8        &kp N9        &kp N0
+  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp CAPSLOCK    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+  &trans            &trans        &trans        &trans          &trans          &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+                                  &trans        &trans          &trans          &trans  &trans        &trans
             >;
         };
 
-        sym {
-            label = "SYM";
-            display-name = "SYM";
+        nav {
+            label = "NAV";
+            display-name = "NAV";
             bindings = <
   &kp EXCLAMATION   &kp AT             &kp HASH       &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
   &kp LEFT_CONTROL  &kp LEFT_ALT       &kp LEFT_GUI   &kp LEFT_SHIFT  &kp CAPSLOCK       &kp PLUS   &kp MINUS      &kp GRAVE     &kp BACKSLASH         &kp SINGLE_QUOTE
