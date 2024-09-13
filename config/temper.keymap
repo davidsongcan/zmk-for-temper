@@ -125,7 +125,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <2 3>;
             timeout-ms = <30>;
         };
 
@@ -143,13 +143,13 @@
 
         back {
             bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
             timeout-ms = <30>;
         };
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             timeout-ms = <30>;
         };
 
