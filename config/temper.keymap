@@ -172,9 +172,9 @@
         };
 
         qwe-col {
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
             key-positions = <0 9>;
-            layers = <0 3 1 2 4>;
+            layers = <4 3 1 2 0>;
         };
 
         close {
@@ -186,28 +186,28 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <14 15>;
-            layers = <3 1 2 0>;
+            layers = <3 1 2 4>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <24 25>;
-            layers = <3 1 2 0>;
+            layers = <3 1 2 4>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
+        Colemak-DH {
+            label = "Colemak-DH";
+            display-name = "Base";
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R            &kp T              &kp Y            &kp U          &kp I         &kp O             &kp P
-  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F     &kp G              &kp H            &hml RSHIFT J  &hml RCTRL K  &hml RIGHT_ALT L  &hml RGUI SEMI
-  &kp Z        &kp X        &kp C         &kp V            &kp B              &kp N            &kp M          &kp COMMA     &kp DOT           &kp FSLH
-                            &kp CAPS      &lt 1 BACKSPACE  &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER    &caps_word
+  &kp Q            &kp W            &kp F                &kp P              &kp B              &kp J            &kp L               &kp U                 &kp Y             &kp SEMI
+  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G              &kp M            &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
+  &kp Z            &kp X            &kp C                &kp D              &kp V              &kp K            &kp H               &kp COMMA             &kp DOT           &kp FSLH
+                                    &kp CAPS             &lt 1 BACKSPACE    &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER         &caps_word
             >;
-
-            label = "QWERTY";
         };
 
         num {
@@ -244,15 +244,15 @@
             label = "FUN";
         };
 
-        Colemak-DH {
-            label = "Colemak-DH";
-            display-name = "Base";
+        qwerty {
             bindings = <
-  &kp Q            &kp W            &kp F                &kp P              &kp B              &kp J            &kp L               &kp U                 &kp Y             &kp SEMI
-  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G              &kp M            &hml RIGHT_SHIFT N  &hml RIGHT_CONTROL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O
-  &kp Z            &kp X            &kp C                &kp D              &kp V              &kp K            &kp H               &kp COMMA             &kp DOT           &kp FSLH
-                                    &kp CAPS             &lt 1 BACKSPACE    &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER         &caps_word
+  &kp Q  &kp W  &kp E                &kp R            &kp T              &kp Y            &kp U        &kp I                     &kp O    &kp P
+  &kp A  &kp S  &kp D                &kp F            &kp G              &kp H            &kp J        &kp K                     &kp L    &kp SEMICOLON
+  &kp Z  &kp X  &kp C                &kp V            &kp B              &kp N            &kp M        &kp COMMA                 &kp DOT  &kp FSLH
+                &mt LEFT_SHIFT CAPS  &lt 1 BACKSPACE  &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER  &mt RIGHT_SHIFT CAPSLOCK
             >;
+
+            label = "QWERTY";
         };
     };
 
