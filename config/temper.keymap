@@ -155,13 +155,13 @@
         };
 
         copy {
-            bindings = <&kp LG(C)>;
+            bindings = <&kp LC(C)>;
             key-positions = <21 22>;
             timeout-ms = <30>;
         };
 
         paste {
-            bindings = <&kp LG(V)>;
+            bindings = <&kp LC(V)>;
             key-positions = <22 23>;
             timeout-ms = <30>;
         };
@@ -224,6 +224,13 @@
             bindings = <&kp DQT &kp DQT &kp LEFT>;
             label = "QUOTATION";
         };
+
+        brace: brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RBRC &kp LEFT>;
+            label = "BRACKET";
+        };
     };
 
     keymap {
@@ -244,10 +251,10 @@
             display-name = "NUM";
             label = "NUM";
             bindings = <
-  &kp N1    &kp N2        &kp N3     &kp N4          &kp N5          &kp N6          &kp N7        &kp N8        &kp N9        &kp N0
-  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-  &trans    &trans        &trans     &trans          &bracket        &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-                          &trans     &trans          &trans          &kp NUMBER_0    &kp PERIOD    &trans
+  &kp N1    &kp N2        &kp N3     &kp N4          &kp N5      &kp N6          &kp N7        &kp N8        &kp N9        &kp N0
+  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &bracket    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+  &trans    &trans        &trans     &parentheses    &brace      &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+                          &trans     &trans          &trans      &kp NUMBER_0    &kp PERIOD    &trans
             >;
         };
 
@@ -255,10 +262,10 @@
             label = "NAV";
             display-name = "NAV";
             bindings = <
-  &kp LEFT  &kp UP        &kp DOWN   &kp RIGHT   &kp ESC    &kp DELETE   &kp PG_UP  &kp HOME   &kp END        &kp PAGE_DOWN
-  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &kp TAB    &apostrophe  &kp LEFT   &kp UP     &kp DOWN       &kp RIGHT
-  &trans    &trans        &trans     &trans      &trans     &quotation   &kp GRAVE  &kp TILDE  &kp BACKSLASH  &kp PIPE
-                          &trans     &trans      &trans     &trans       &trans     &trans
+  &trans    &trans        &trans     &trans      &trans    &trans       &kp PG_UP  &kp HOME   &kp END        &kp PAGE_DOWN
+  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans    &apostrophe  &kp LEFT   &kp UP     &kp DOWN       &kp RIGHT
+  &trans    &trans        &trans     &trans      &trans    &quotation   &kp GRAVE  &kp TILDE  &kp BACKSLASH  &kp PIPE
+                          &trans     &trans      &trans    &trans       &trans     &trans
             >;
         };
 
