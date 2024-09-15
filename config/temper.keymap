@@ -247,10 +247,10 @@
             label = "Colemak-DH";
             display-name = "Base";
             bindings = <
-  &kp Q            &kp W            &kp F                &kp P              &kp B              &kp J            &kp L               &kp U                 &kp Y             &kp SEMI
-  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G              &kp M            &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
-  &kp Z            &kp X            &kp C                &kp D              &kp V              &kp K            &kp H               &kp COMMA             &kp DOT           &kp FSLH
-                                    &lt 6 ESCAPE         &lt 1 SPACE        &mt LCTRL SPACE    &mt RCTRL ENTER  &lt 2 BACKSPACE     &kp BACKSPACE
+  &kp Q            &kp W            &kp F                &kp P              &kp B          &kp J            &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE
+  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G          &kp M            &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
+  &kp Z            &kp X            &kp C                &kp D              &kp V          &kp K            &kp H               &kp COMMA             &kp DOT           &kp FSLH
+                                    &lt 3 ESCAPE         &lt 1 SPACE        &lt 2 SPACE    &mt RCTRL ENTER  &lt 4 BACKSPACE     &kp BACKSPACE
             >;
         };
 
@@ -259,7 +259,7 @@
             label = "NUM";
             bindings = <
   &none      &none         &none      &none           &bracket        &none      &kp N7        &kp N8        &kp N9        &kp N0
-  &kp LGUI   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE
+  &kp LGUI   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMI
   &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &brace          &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
                            &trans     &trans          &trans          &kp MINUS  &kp N0        &kp PERIOD
             >;
@@ -270,7 +270,7 @@
             display-name = "NAV";
             bindings = <
   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp DOLLAR      &kp PERCENT     &kp CARET       &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-  &kp LEFT_GUI     &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &caps_word      &kp PLUS        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp DOUBLE_QUOTES
+  &kp LEFT_GUI     &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &caps_word      &kp PLUS        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON
   &kp LC(Z)        &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp CAPSLOCK    &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE
                                  &trans     &trans          &trans          &kp UNDERSCORE  &parentheses     &than
             >;
