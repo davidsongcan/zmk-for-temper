@@ -243,7 +243,7 @@
   &kp Q            &kp W            &kp F                &kp P              &kp B              &kp J            &kp L               &kp U                 &kp Y             &kp SEMI
   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G              &kp M            &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
   &kp Z            &kp X            &kp C                &kp D              &kp V              &kp K            &kp H               &kp COMMA             &kp DOT           &kp FSLH
-                                    &mt LEFT_SHIFT CAPS  &lt 1 TAB          &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER         &kp BACKSPACE
+                                    &lt 3 CAPS           &lt 1 TAB          &mt LCTRL SPACE    &mt RCTRL SPACE  &lt 2 ENTER         &kp BACKSPACE
             >;
         };
 
