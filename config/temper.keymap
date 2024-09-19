@@ -273,19 +273,19 @@
             label = "Colemak-DH";
             display-name = "Base";
             bindings = <
-  &kp Q              &kp W            &kp F            &kp P         &kp B          &kp J        &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE
-  &hml LEFT_SHIFT A  &hml LEFT_GUI R  &hml LEFT_GUI S  &hml ENTER T  &kp G          &kp M        &hmr RIGHT_SHIFT N  &hmr LS(RIGHT_ALT) E  &hmr RIGHT_ALT I  &hmr RIGHT_SHIFT O
-  &kp Z              &kp X            &kp C            &kp D         &kp V          &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH
-                                      &lt 4 ESCAPE     &lt 2 SPACE   &lt 3 SPACE    &lt 5 ENTER  &lt 5 BACKSPACE     &lt 6 DEL
+  &kp Q              &kp W            &kp F            &kp P         &kp B          &kp J        &kp L            &kp U                 &kp Y        &kp SINGLE_QUOTE
+  &hml LEFT_SHIFT A  &hml LEFT_GUI R  &hml LEFT_ALT S  &hml ENTER T  &kp G          &kp M        &hmr RCTRL N     &hmr LS(RIGHT_ALT) E  &hmr RGUI I  &hmr RIGHT_SHIFT O
+  &kp Z              &kp X            &kp C            &kp D         &kp V          &kp K        &kp H            &kp COMMA             &kp DOT      &kp FSLH
+                                      &lt 3 ESCAPE     &lt 1 SPACE   &lt 2 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE  &lt 6 DEL
             >;
         };
 
         num-sys {
             bindings = <
-  &kp EXCLAMATION          &kp AT_SIGN            &kp HASH               &kp DOLLAR          &kp PERCENT    &kp CARET  &kp AMPERSAND               &kp ASTERISK            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS
-  &mt LEFT_SHIFT NUMBER_1  &mt LEFT_GUI NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LCTRL NUMBER_4  &kp N5         &kp N6     &mt RIGHT_CONTROL NUMBER_7  &mt RIGHT_ALT ASTERISK  &mt RIGHT_GUI NUMBER_9  &mt RIGHT_SHIFT NUMBER_0
-  &trans                   &trans                 &trans                 &trans              &trans         &trans     &trans                      &trans                  &trans                  &trans
-                                                  &trans                 &trans              &trans         &trans     &trans                      &trans
+  &kp EXCLAMATION           &kp AT_SIGN             &kp HASH                &kp DOLLAR           &kp PERCENT    &kp CARET  &kp AMPERSAND                &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
+  &hml LEFT_SHIFT NUMBER_1  &hml LEFT_GUI NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LCTRL NUMBER_4  &kp N5         &kp N6     &hmr RIGHT_CONTROL NUMBER_7  &hmr RIGHT_ALT ASTERISK  &hmr RIGHT_GUI NUMBER_9  &hmr RIGHT_SHIFT NUMBER_0
+  &kp HOME                  &kp END                 &kp PG_UP               &kp PAGE_DOWN        &trans         &trans     &kp LEFT                     &kp RIGHT                &kp UP                   &kp DOWN
+                                                    &trans                  &trans               &trans         &trans     &trans                       &trans
             >;
 
             label = "num-sys";
@@ -295,10 +295,10 @@
             display-name = "NUM";
             label = "Numpad";
             bindings = <
-  &none      &none         &none      &none           &bracket        &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
-  &kp LGUI   &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMI
-  &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)       &brace          &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
-                           &none      &trans          &none           &kp MINUS         &kp N0        &kp PERIOD
+  &none           &none         &none         &none      &bracket        &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
+  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &parentheses    &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMI
+  &kp LC(Z)       &kp LC(X)     &kp LC(C)     &kp LC(V)  &brace          &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
+                                &none         &trans     &none           &kp MINUS         &kp N0        &kp PERIOD
             >;
         };
 
@@ -306,19 +306,19 @@
             label = "sym";
             display-name = "NAV";
             bindings = <
-  &none         &none         &none      &none           &none           &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
-  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &caps_word      &kp PLUS        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON
-  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp CAPSLOCK    &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp TILDE
-                              &none      &none           &trans          &kp UNDERSCORE  &parentheses     &than
+  &none           &none         &none         &none      &none           &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
+  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &caps_word      &kp PLUS        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp COLON
+  &kp LC(Z)       &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp CAPSLOCK    &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp TILDE
+                                &none         &none      &trans          &kp UNDERSCORE  &parentheses     &than
             >;
         };
 
         fun {
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp SYSREQ      &kp F7  &kp F8  &kp F9  &kp F12
-  &kp LGUI      &kp LEFT_ALT    &kp LCTRL     &kp LSHIFT    &out OUT_TOG    &kp SCROLLLOCK  &kp F4  &kp F5  &kp F6  &kp F11
-  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_PAUSE     &kp F1  &kp F2  &kp F3  &kp F10
-                                &trans        &trans        &trans          &trans          &trans  &mo 7
+  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp SYSREQ      &kp F7  &kp F8  &kp F9  &kp F12
+  &kp LEFT_SHIFT  &kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG    &kp SCROLLLOCK  &kp F4  &kp F5  &kp F6  &kp F11
+  &bt BT_CLR      &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_PAUSE     &kp F1  &kp F2  &kp F3  &kp F10
+                                  &trans        &trans        &trans          &trans          &trans  &mo 7
             >;
 
             display-name = "FUN";
@@ -327,10 +327,10 @@
 
         Nav {
             bindings = <
-  &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp ESC       &none   &mkp LCLK       &mkp MCLK  &mkp RCLK      &kp BACKSPACE
-  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &caps_word    &none   &kp LEFT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &none   &none           &none      &none          &kp DELETE
-                        &trans     &trans     &trans        &trans  &trans          &trans
+  &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp ESC       &none   &mkp LCLK  &mkp MCLK      &mkp RCLK      &kp BACKSPACE
+  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &caps_word    &none   &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RIGHT_SHIFT
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &none   &none      &none          &none          &kp DELETE
+                        &trans     &trans     &trans        &trans  &trans     &trans
             >;
 
             label = "Nav";
@@ -359,5 +359,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        function {
+            if-layers = <2 5>;
+            then-layer = <4>;
+        };
+    };
 };
