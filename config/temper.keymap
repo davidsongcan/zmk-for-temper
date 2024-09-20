@@ -282,10 +282,10 @@
 
         num-sys {
             bindings = <
-  &kp EXCLAMATION           &kp AT_SIGN             &kp HASH                &kp DOLLAR           &kp PERCENT    &kp CARET  &kp AMPERSAND                &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
-  &hml LEFT_SHIFT NUMBER_1  &hml LEFT_GUI NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LCTRL NUMBER_4  &kp N5         &kp N6     &hmr RIGHT_CONTROL NUMBER_7  &hmr RIGHT_ALT ASTERISK  &hmr RIGHT_GUI NUMBER_9  &hmr RIGHT_SHIFT NUMBER_0
-  &kp HOME                  &kp END                 &kp PG_UP               &kp PAGE_DOWN        &trans         &trans     &kp LEFT                     &kp RIGHT                &kp UP                   &kp DOWN
-                                                    &trans                  &trans               &trans         &trans     &trans                       &trans
+  &kp EXCLAMATION           &kp AT_SIGN             &kp HASH                &kp DOLLAR           &kp PERCENT    &kp CARET   &kp AMPERSAND                &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
+  &hml LEFT_SHIFT NUMBER_1  &hml LEFT_GUI NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LCTRL NUMBER_4  &kp N5         &kp N6      &hmr RIGHT_CONTROL NUMBER_7  &hmr RIGHT_ALT ASTERISK  &hmr RIGHT_GUI NUMBER_9  &hmr RIGHT_SHIFT NUMBER_0
+  &kp HOME                  &kp END                 &kp PG_UP               &kp PAGE_DOWN        &bt BT_NXT     &bt BT_PRV  &kp LEFT                     &kp RIGHT                &kp UP                   &kp DOWN
+                                                    &trans                  &trans               &trans         &trans      &trans                       &trans
             >;
 
             label = "num-sys";
