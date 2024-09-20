@@ -274,7 +274,7 @@
             display-name = "Base";
             bindings = <
   &kp Q              &kp W            &kp F            &kp P         &kp B          &kp J        &kp L            &kp U                 &kp Y        &kp SINGLE_QUOTE
-  &hml LEFT_SHIFT A  &hml LEFT_GUI R  &hml LEFT_ALT S  &hml ENTER T  &kp G          &kp M        &hmr RCTRL N     &hmr LS(RIGHT_ALT) E  &hmr RGUI I  &hmr RIGHT_SHIFT O
+  &hml LEFT_SHIFT A  &hml LEFT_GUI R  &hml LEFT_ALT S  &hml LCTRL T  &kp G          &kp M        &hmr RCTRL N     &hmr LS(RIGHT_ALT) E  &hmr RGUI I  &hmr RIGHT_SHIFT O
   &kp Z              &kp X            &kp C            &kp D         &kp V          &kp K        &kp H            &kp COMMA             &kp DOT      &kp FSLH
                                       &lt 3 ESCAPE     &lt 1 SPACE   &lt 2 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE  &lt 6 DEL
             >;
