@@ -159,14 +159,14 @@
             bindings = <&kp LC(X)>;
             key-positions = <21 22>;
             timeout-ms = <30>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <22 23>;
             timeout-ms = <30>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         slash {
@@ -175,7 +175,7 @@
         };
 
         col-qwe {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <0 9>;
             layers = <0>;
         };
@@ -183,25 +183,25 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <14 15>;
-            layers = <6 2 3 6>;
+            layers = <1 2>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <24 25>;
-            layers = <6 2 3 6>;
+            layers = <1 2>;
         };
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <20 21>;
-            layers = <7>;
+            layers = <6>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <23 24>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
 
         undo {
@@ -218,7 +218,7 @@
         qwe-col {
             bindings = <&mo 0>;
             key-positions = <0 9>;
-            layers = <7>;
+            layers = <6>;
         };
     };
 
@@ -276,19 +276,8 @@
   &kp Q              &kp W            &kp F            &kp P         &kp B          &kp J        &kp L            &kp U                 &kp Y        &kp SINGLE_QUOTE
   &hml LEFT_SHIFT A  &hml LEFT_GUI R  &hml LEFT_ALT S  &hml LCTRL T  &kp G          &kp M        &hmr RCTRL N     &hmr LS(RIGHT_ALT) E  &hmr RGUI I  &hmr RIGHT_SHIFT O
   &kp Z              &kp X            &kp C            &kp D         &kp V          &kp K        &kp H            &kp COMMA             &kp DOT      &kp FSLH
-                                      &lt 3 ESCAPE     &lt 1 SPACE   &lt 2 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE  &lt 6 DEL
+                                      &lt 3 ESCAPE     &lt 1 SPACE   &lt 2 SPACE    &lt 5 ENTER  &lt 4 BACKSPACE  &mo 6
             >;
-        };
-
-        num-sys {
-            bindings = <
-  &kp EXCLAMATION           &kp AT_SIGN             &kp HASH                &kp DOLLAR           &kp PERCENT    &kp CARET   &kp AMPERSAND                &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
-  &hml LEFT_SHIFT NUMBER_1  &hml LEFT_GUI NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LCTRL NUMBER_4  &kp N5         &kp N6      &hmr RIGHT_CONTROL NUMBER_7  &hmr RIGHT_ALT ASTERISK  &hmr RIGHT_GUI NUMBER_9  &hmr RIGHT_SHIFT NUMBER_0
-  &kp HOME                  &kp END                 &kp PG_UP               &kp PAGE_DOWN        &bt BT_NXT     &bt BT_PRV  &kp LEFT                     &kp RIGHT                &kp UP                   &kp DOWN
-                                                    &trans                  &trans               &trans         &trans      &trans                       &trans
-            >;
-
-            label = "num-sys";
         };
 
         numpad {
@@ -318,33 +307,33 @@
   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp SYSREQ      &kp F7  &kp F8  &kp F9  &kp F12
   &kp LEFT_SHIFT  &kp LEFT_GUI    &kp LEFT_ALT  &kp LCTRL     &out OUT_TOG    &kp SCROLLLOCK  &kp F4  &kp F5  &kp F6  &kp F11
   &bt BT_CLR      &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_PAUSE     &kp F1  &kp F2  &kp F3  &kp F10
-                                  &trans        &trans        &trans          &trans          &trans  &mo 7
+                                  &trans        &trans        &trans          &trans          &trans  &mo 6
             >;
 
             display-name = "FUN";
             label = "FUN";
         };
 
+        num-sys {
+            bindings = <
+  &kp EXCLAMATION           &kp AT_SIGN             &kp HASH                &kp DOLLAR           &kp PERCENT    &kp CARET  &kp AMPERSAND                &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
+  &hml LEFT_SHIFT NUMBER_1  &hml LEFT_GUI NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LCTRL NUMBER_4  &kp N5         &kp N6     &hmr RIGHT_CONTROL NUMBER_7  &hmr RIGHT_ALT ASTERISK  &hmr RIGHT_GUI NUMBER_9  &hmr RIGHT_SHIFT NUMBER_0
+  &kp HOME                  &kp END                 &kp PG_UP               &kp PAGE_DOWN        &none          &none      &kp LEFT                     &kp RIGHT                &kp UP                   &kp DOWN
+                                                    &trans                  &trans               &trans         &trans     &trans                       &trans
+            >;
+
+            label = "num-sys";
+        };
+
         Nav {
             bindings = <
   &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp ESC       &none   &mkp LCLK  &mkp MCLK      &mkp RCLK      &kp BACKSPACE
   &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &caps_word    &none   &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RIGHT_SHIFT
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &none   &none      &none          &none          &kp DELETE
-                        &trans     &trans     &trans        &trans  &trans     &trans
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none         &none   &none      &none          &none          &kp DELETE
+                        &trans     &trans     &trans        &trans  &none      &none
             >;
 
             label = "Nav";
-        };
-
-        media {
-            bindings = <
-  &trans  &none           &kp C_VOLUME_UP    &none             &none         &trans  &trans  &trans  &trans  &trans
-  &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT        &none         &trans  &trans  &trans  &trans  &trans
-  &trans  &trans          &trans             &trans            &none         &trans  &trans  &trans  &trans  &trans
-                          &kp C_MUTE         &kp C_PLAY_PAUSE  &kp C_STOP    &trans  &trans  &trans
-            >;
-
-            label = "media";
         };
 
         qwerty {
@@ -352,7 +341,7 @@
   &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y   &kp U   &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D      &kp F      &kp G      &kp H   &kp J   &kp K      &kp L    &kp SEMICOLON
   &kp Z  &kp X  &kp C      &kp V      &kp B      &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                &kp LCTRL  &kp SPACE  &kp TAB    &trans  &trans  &trans
+                &kp LCTRL  &kp SPACE  &kp TAB    &trans  &trans  &mo 0
             >;
 
             label = "QWERTY";
@@ -363,8 +352,8 @@
         compatible = "zmk,conditional-layers";
 
         function {
-            if-layers = <2 5>;
-            then-layer = <4>;
+            if-layers = <1 5>;
+            then-layer = <5>;
         };
     };
 };
