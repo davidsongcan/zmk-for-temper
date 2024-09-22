@@ -174,7 +174,7 @@
             key-positions = <15 6>;
         };
 
-        qwe-col {
+        col-qwe {
             bindings = <&tog 7>;
             key-positions = <0 9>;
             layers = <0>;
@@ -219,6 +219,12 @@
         caps {
             bindings = <&kp CAPS>;
             key-positions = <10 11>;
+        };
+
+        qwe-col {
+            bindings = <&mo 0>;
+            key-positions = <0 9>;
+            layers = <7>;
         };
     };
 
