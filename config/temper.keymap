@@ -145,13 +145,13 @@
 
         back {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             timeout-ms = <30>;
         };
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             timeout-ms = <30>;
         };
 
@@ -178,12 +178,6 @@
             bindings = <&tog 7>;
             key-positions = <0 9>;
             layers = <0>;
-        };
-
-        close {
-            bindings = <&kp LA(F4)>;
-            key-positions = <8 9>;
-            layers = <6>;
         };
 
         minus {
