@@ -273,10 +273,10 @@
             label = "Colemak-DH";
             display-name = "Base";
             bindings = <
-  &kp Q            &kp W            &kp F         &kp P              &kp B          &kp J        &kp L               &kp U         &kp Y             &kp SINGLE_QUOTE
-  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp M        &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
-  &kp Z            &kp X            &kp C         &kp D              &kp V          &kp K        &kp H               &kp COMMA     &kp DOT           &kp FSLH
-                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 SPACE    &lt 5 ENTER  &lt 4 BACKSPACE     &mo 6
+  &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J        &kp L               &kp U         &kp Y             &kp SINGLE_QUOTE
+  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
+  &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H               &kp COMMA     &kp DOT           &kp FSLH
+                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE     &mo 6
             >;
         };
 
@@ -286,7 +286,7 @@
             bindings = <
   &none         &none         &none      &none           &bracket        &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET
   &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMI
-  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(D)       &kp LC(V)       &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
+  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(V)       &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
                               &none      &trans          &none           &kp MINUS         &kp N0        &kp PERIOD
             >;
         };
@@ -297,7 +297,7 @@
             bindings = <
   &none         &none         &none      &none           &brace          &kp LEFT_BRACE  &kp AMPERSAND         &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE
   &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &parentheses    &kp PLUS        &kp DOLLAR            &kp PERCENT            &kp CARET             &kp COLON
-  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(D)       &kp LC(V)       &kp PIPE        &kp EXCLAMATION       &kp AT_SIGN            &kp HASH              &kp TILDE
+  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(V)       &kp PIPE        &kp EXCLAMATION       &kp AT_SIGN            &kp HASH              &kp TILDE
                               &none      &none           &trans          &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
@@ -318,7 +318,7 @@
             bindings = <
   &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp ESC       &none   &mkp LCLK        &mkp MCLK  &mkp RCLK      &kp DELETE
   &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &caps_word    &none   &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)     &none   &none            &none      &none          &none
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)     &none   &none            &none      &none          &none
                         &trans     &trans     &trans        &trans  &trans           &none
             >;
 
