@@ -276,7 +276,7 @@
   &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J        &kp L               &kp U         &kp Y             &kp SINGLE_QUOTE
   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
   &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H               &kp COMMA     &kp DOT           &kp FSLH
-                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &to 6
+                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE     &to 6
             >;
         };
 
@@ -314,26 +314,26 @@
             label = "FUN";
         };
 
-        Nav {
-            bindings = <
-  &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp ESC       &none  &mkp LCLK        &mkp MCLK  &mkp RCLK      &kp DELETE
-  &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &caps_word    &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
-  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(V)     &none  &none            &none      &none          &none
-                             &none           &none            &none         &none  &trans           &none
-            >;
-
-            label = "Nav";
-        };
-
         num-sys {
             bindings = <
   &kp EXCLAMATION         &kp AT_SIGN             &kp HASH             &kp DOLLAR                &kp PERCENT    &kp CARET  &kp AMPERSAND              &kp ASTERISK         &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
   &hml LEFT_GUI NUMBER_1  &hml LEFT_ALT NUMBER_2  &hml LCTRL NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5         &kp N6     &hmr RIGHT_SHIFT NUMBER_7  &hmr RCTRL NUMBER_8  &hmr RIGHT_ALT NUMBER_9  &hmr RIGHT_GUI NUMBER_0
   &kp HOME                &kp END                 &kp PG_UP            &kp PAGE_DOWN             &none          &none      &kp LEFT                   &kp RIGHT            &kp UP                   &kp DOWN
-                                                  &none                &none                     &none          &trans     &none                      &none
+                                                  &none                &none                     &none          &none      &none                      &none
             >;
 
             label = "num-sys";
+        };
+
+        Navigator {
+            bindings = <
+  &kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &kp ESC       &none  &mkp LCLK        &mkp MCLK  &mkp RCLK      &kp DELETE
+  &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &caps_word    &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
+  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(V)     &none  &none            &none      &none          &none
+                             &none           &none            &none         &none  &none            &none
+            >;
+
+            label = "Navigator";
         };
 
         qwerty {
@@ -352,8 +352,8 @@
         compatible = "zmk,conditional-layers";
 
         function {
-            if-layers = <1 4>;
-            then-layer = <4>;
+            if-layers = <1 5>;
+            then-layer = <5>;
         };
     };
 };
