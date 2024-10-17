@@ -276,7 +276,7 @@
   &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J        &kp L               &kp U         &kp Y             &kp SINGLE_QUOTE
   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O
   &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H               &kp COMMA     &kp DOT           &kp FSLH
-                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE     &to 6
+                                    &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &to 6
             >;
         };
 
